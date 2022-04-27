@@ -1,5 +1,7 @@
+import Keyboard from "./components/Keyboard/Keyboard";
+
 const App = () => {
-  <p>Hola</p>;
+  return <Keyboard />;
 };
 
 export default App;
