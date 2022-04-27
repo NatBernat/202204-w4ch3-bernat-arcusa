@@ -4,16 +4,16 @@
 
 - Renderiza un boton con texto recibido y una acción recibida
 
-# Keyboard
+## Keyboard
 
 - Renderiza un componente Key en base al array recibido
 - En el estado 'Calling' se bloquea el teclado
 
-# Action
+## Action
 
 - Renderiza un botón con un texto recibido y una acción recibida
 
-# Actions
+## Actions
 
 - Renderiza un componente Action con el texto "Call" y la acción de lanzar la llamada.
 - Este solo activará cuando el display contega 9 números.
@@ -21,10 +21,10 @@
 - Renderiza un componente Action con el texto "hang" y la acción de colgar la llamada.
 - Al pulsarlo, se cambia al estado 'Dialing' y en el estado 'Dialing' no se muestra.
 
-# Display
+## Display
 
 - Renderiza un listado de números recibido
 
-# Info
+## Info
 
 - Renderiza un texto recibido

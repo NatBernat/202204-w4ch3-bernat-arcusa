@@ -1,7 +1,8 @@
+import Actions from "./components/Actions/Actions";
 import Keyboard from "./components/Keyboard/Keyboard";
 
 const App = () => {
-  const displayContent = 667359961;
+  const displayContent = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
     <div className="container">
@@ -9,15 +10,7 @@ const App = () => {
       <span className="message">Calling...</span>
       <main className="phone">
         <Keyboard />
-        <div className="actions">
-          <span className="number">{displayContent}</span>
-          <a href="call" className="call">
-            Call
-          </a>
-          <a href="hang" className="hang active">
-            Hang
-          </a>
-        </div>
+        <Actions displayContent={displayContent} />
       </main>
     </div>
   );
