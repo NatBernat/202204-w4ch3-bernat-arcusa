@@ -1,7 +1,7 @@
-const Key = ({ text, className, action }) => {
+const Key = ({ text, className, keyAction }) => {
   return (
     <li>
-      <button className={className} onClick={action}>
+      <button className={className} onClick={keyAction}>
         {text}
       </button>
     </li>
