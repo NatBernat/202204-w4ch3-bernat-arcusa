@@ -5,11 +5,11 @@ const Keyboard = ({ keys }) => {
   return (
     <div className="keyboard-container">
       <ol className="keyboard">
-        {keysList.map((key, i) => (
+        {keysList.map((key, index) => (
           <Key
             text={key}
             className={typeof key === "string" ? "key big" : "key"}
-            key={i}
+            key={index}
           />
         ))}
       </ol>
