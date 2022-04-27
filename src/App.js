@@ -1,4 +1,5 @@
 import Actions from "./components/Actions/Actions";
+import Info from "./components/Info/Info";
 import Keyboard from "./components/Keyboard/Keyboard";
 
 const App = () => {
@@ -6,8 +7,7 @@ const App = () => {
 
   return (
     <div className="container">
-      {/* El siguiente elemento se oculta añadiéndole la clase "off" */}
-      <span className="message">Calling...</span>
+      <Info className="message" message="Calling..." />
       <main className="phone">
         <Keyboard />
         <Actions displayContent={displayContent} />
