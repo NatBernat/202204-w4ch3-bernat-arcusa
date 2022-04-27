@@ -1,27 +1,40 @@
-# Week 4 - Challenge 3
+# Lista de componentes
 
-## Teléfono React
+## Key
 
-Aquí tienes la maquetación HTML/CSS de una aplicación, tendrás que programarla en React.
+- Renderiza un boton con texto recibido y una acción recibida
 
-- Se debe poder escribir un número de teléfono clicando en los botones numéricos. La tecla borrar puede borrar el último dígito o borrar el número completo, como prefieras.
-- Sólo se verá o el botón Llamar o el botón Colgar, nunca los dos a la vez.
-- No se puede introducir un número de más de 9 cifras.
-- El botón Llamar sólo se puede pulsar si el número tiene 9 cifras. Cuando tenga 9 cifras el botón debe tener la clase "active".
-- El mensaje superior "Llamando..." sólo aparece cuando se pulsa el botón "Llamar" y mientras dure la llamada. Usa la clase "off" para controlar su visibilidad (el elemento HTML correspondiente debe seguir estando, aunque no se vea).
-- Al pulsar el botón "Llamar", éste debe desaparecer del DOM y debe aparecer en su lugar el botón "Colgar". El teclado tiene que quedar deshabilitado.
-- Al pulsar el botón "Colgar", éste debe desaparecer y debe aparecer en su lugar el botón "Llamar". El teclado tiene que habilitarse. Además, se debe borrar el número de teléfono.
-- Si no ocurre nada tras cinco segundos de llamada, ésta se debe colgar automáticamente.
+# Keyboard
 
-Separa todo en los siguientes componentes:
+- Renderiza un componente Key con el valor "1" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "2" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "3" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "4" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "5" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "6" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "7" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "8" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "9" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "0" y la acción de añadir al display ese número
+- Renderiza un componente Key con el valor "delete" y la acción de eliminar todos los números
+- En el estado 'Calling' se bloquea el teclado
 
-- Info
-- Display
-- Actions
-  - Action
-- Keyboard
-  - Key
+# Action
 
-Guarda los estados comunes en un context.
+- Renderiza un botón con un texto recibido y una acción recibida
 
-Entrega también un listado de responsabilidades.
+# Actions
+
+- Renderiza un componente Action con el texto "Call" y la acción de lanzar la llamada.
+- Este solo activará cuando el display contega 9 números.
+- Al pulsarlo, se cambia al estado 'Calling' y en el estado 'Calling' no se muestra.
+- Renderiza un componente Action con el texto "hang" y la acción de colgar la llamada.
+- Al pulsarlo, se cambia al estado 'Dialing' y en el estado 'Dialing' no se muestra.
+
+# Display
+
+- Renderiza un listado de números recibido
+
+# Info
+
+- Renderiza un texto recibido
